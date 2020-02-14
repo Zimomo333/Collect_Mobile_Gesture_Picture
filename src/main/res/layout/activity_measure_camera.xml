@@ -107,23 +107,23 @@
 
             <Button
                 android:id="@+id/switchIRButton"
-                android:layout_width="150dp"
+                android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:text="@string/camera_tool_switch_ir" />
 
             <Button
                 android:id="@+id/saveDepthButton"
-                android:layout_width="150dp"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:onClick="saveDepth"
                 android:text="@string/camera_tool_save_depth" />
 
-            <TextView
+            <EditText
                 android:id="@+id/gesture_name"
-                android:layout_width="150dp"
+                android:layout_width="130dp"
                 android:layout_height="match_parent"
                 android:text="gesture_name"
-                android:textSize="23sp" />
+                android:textSize="15sp" />
 
         </LinearLayout>
 

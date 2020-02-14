@@ -20,6 +20,7 @@ import android.view.TextureView;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -251,9 +252,10 @@ public class CameraActivity extends BaseActivity {
     public void saveDepth(View view) {
 //        mCameraTools.saveDepthData(mPreviewSize.getWidth(), mPreviewSize.getHeight());
         TextureView textureView = findViewById(R.id.depthTextureView);
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");// HH:mm:ss
+        EditText editText = findViewById(R.id.gesture_name);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");// HH:mm:ss
         Date date = new Date(System.currentTimeMillis());
-        FileUtils.writeBitmapToFile(textureView.getBitmap(),Environment.getExternalStorageDirectory().getPath() + "/mynteye/picture/",simpleDateFormat.format(date)+".jpg");
+        FileUtils.writeBitmapToFile(textureView.getBitmap(),Environment.getExternalStorageDirectory().getPath() + "/mynteye/picture/",editText.getText()+"_"+simpleDateFormat.format(date)+".jpg");
     }
     public void readDepth(View view) {
         mCameraTools.readDepthData();

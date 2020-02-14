@@ -669,6 +669,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id forever
+id gesture_name
 id group_divider
 id gyroTextView
 id home
@@ -709,12 +710,10 @@ id previewLRCheckBox
 id progress_circular
 id progress_horizontal
 id radio
-id readDepthButton
 id right
 id right_icon
 id right_side
 id saveDepthButton
-id savePlyButton
 id screen
 id scrollIndicatorDown
 id scrollIndicatorUp
