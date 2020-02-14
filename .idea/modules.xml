@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mynteye_d_android_sdk_sample.iml" filepath="$PROJECT_DIR$/mynteye_d_android_sdk_sample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Gesture_Picture.iml" filepath="$PROJECT_DIR$/Gesture_Picture.iml" />
     </modules>
   </component>
 </project>

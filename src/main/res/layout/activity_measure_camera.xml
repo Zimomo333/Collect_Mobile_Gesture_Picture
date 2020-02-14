@@ -107,30 +107,23 @@
 
             <Button
                 android:id="@+id/switchIRButton"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:text="@string/camera_tool_switch_ir"/>
-
-            <Button
-                android:id="@+id/savePlyButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="savePly"
-                android:text="@string/camera_tool_save_ply"/>
+                android:text="@string/camera_tool_switch_ir" />
 
             <Button
                 android:id="@+id/saveDepthButton"
-                android:layout_width="wrap_content"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 android:onClick="saveDepth"
-                android:text="@string/camera_tool_save_depth"/>
+                android:text="@string/camera_tool_save_depth" />
 
-            <Button
-                android:id="@+id/readDepthButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="readDepth"
-                android:text="@string/camera_tool_read_depth"/>
+            <TextView
+                android:id="@+id/gesture_name"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="gesture_name"
+                android:textSize="23sp" />
 
         </LinearLayout>
 
