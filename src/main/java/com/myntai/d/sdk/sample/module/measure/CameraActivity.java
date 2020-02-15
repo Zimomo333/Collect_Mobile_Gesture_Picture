@@ -255,7 +255,7 @@ public class CameraActivity extends BaseActivity {
         EditText editText = findViewById(R.id.gesture_name);
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");// HH:mm:ss
         Date date = new Date(System.currentTimeMillis());
-        FileUtils.writeBitmapToFile(textureView.getBitmap(),Environment.getExternalStorageDirectory().getPath() + "/mynteye/picture/",editText.getText()+"_"+simpleDateFormat.format(date)+".jpg");
+        FileUtils.writeBitmapToFile(textureView.getBitmap(),Environment.getExternalStorageDirectory().getPath() + "/mynteye/picture/"+editText.getText()+"/",editText.getText()+"_"+simpleDateFormat.format(date)+".jpg");
     }
     public void readDepth(View view) {
         mCameraTools.readDepthData();
